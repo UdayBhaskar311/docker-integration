@@ -1,4 +1,4 @@
-from python
+from httpd
 expose 80
 maintainer udayrobin
 workdir /apps
