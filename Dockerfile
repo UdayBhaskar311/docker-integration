@@ -1,6 +1,9 @@
-from httpd
+from python
 expose 80
 maintainer udayrobin
 workdir /apps
 label python code run test
-copy index.html /usr/local/apache2/htdocs/
+copy requirements.txt .
+run pip install -r requirements.txt
+copy . .
+cmd ["python" , "app.py"]
