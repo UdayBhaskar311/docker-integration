@@ -1,5 +1,6 @@
-from nginx
+from python
 expose 80
 maintainer udayrobin
-label docker integration with jenkins
-copy index.html /usr/share/nginx/html/
+workdir /apps
+label python code run test
+copy index.html /usr/local/apache2/htdocs/
